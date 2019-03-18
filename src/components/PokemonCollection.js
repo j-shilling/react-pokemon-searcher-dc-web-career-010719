@@ -1,3 +1,5 @@
+/* Should this file be in the src/container folder? */
+
 import React from 'react';
 import PokemonCard from './PokemonCard';
 import { Card } from 'semantic-ui-react';

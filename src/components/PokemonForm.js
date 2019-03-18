@@ -13,6 +13,12 @@ class PokemonForm extends React.Component {
     };
   }
 
+  /* IDK for sure, but it might be worth thinking about putting the fetch
+     call here. Because you're using pessimistic rendering, App's state is
+     not actually effected until the last .then() clause. I might have though
+     of the fetch call as part of the 'submitting' action and done it here.
+     That way, the probs.addNewPokemon callback would only be responsible for
+     mutating App's state */
   handleSubmit = e => {
     e.preventDefault();
     this.props.addNewPokemon(this.state);

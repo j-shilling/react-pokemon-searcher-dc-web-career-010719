@@ -1,0 +1,3 @@
+It looks like you added this folder to keep container components. Awesome
+decision--not letting self be controlled by the starter code and improving
+readability.

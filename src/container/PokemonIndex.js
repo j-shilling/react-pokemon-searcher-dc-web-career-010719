@@ -4,6 +4,7 @@ import PokemonForm from '../components/PokemonForm';
 import { Search } from 'semantic-ui-react';
 import _ from 'lodash';
 
+/* Nice use of constant varable */
 const URL = 'http://localhost:3000/pokemon';
 
 class PokemonPage extends React.Component {
@@ -30,6 +31,8 @@ class PokemonPage extends React.Component {
 
   handleSearchChange = (e, { value }) => {
     this.setState({ searchTerm: value });
+    /* It looks like the return value of this.searchPokemon() inspect
+    is ignored here. I don't think it has any effect on your program */
     this.searchPokemon();
   };
 
